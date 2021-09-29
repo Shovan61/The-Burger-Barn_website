@@ -1,0 +1,29 @@
+.hero {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/menu-o-min.jpg);
+    background-position: center center;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.hero h1 {
+    color: wheat;
+    z-index: 20;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}

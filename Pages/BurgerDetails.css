@@ -1,0 +1,22 @@
+.hero-details {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-details::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/bgdetails.jfif);
+    background-position: center center;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 0.6;
+}
