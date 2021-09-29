@@ -1,0 +1,73 @@
+.root {
+    height: 12vh;
+    width: 100%;
+    background-image: url('../images/wood.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    z-index: 10;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.string {
+    position: absolute;
+    height: 55px;
+    width: 1px;
+    background-color: white;
+    left: 44px;
+    bottom: -3.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.key {
+    position: absolute;
+    height: 90px;
+    width: 50px;
+    background-color: rgb(214, 6, 6);
+    left: 20px;
+    bottom: -9rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    animation: pendulum 7s infinite;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -5px 8px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -5px 8px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 8px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.key-text {
+    color: white;
+    font-family: lato;
+    position: relative;
+    top: 2rem;
+    left: 5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@keyframes pendulum {
+    0% {
+        transform: rotate(0deg) skewY(0deg);
+    }
+
+    25% {
+        transform: rotate(1deg) skewY(-10deg);
+    }
+
+    50% {
+        transform: rotate(-1deg) skewY(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg) skewY(0deg);
+    }
+}
+
+.active {
+    transform: translateY(-12vh);
+}

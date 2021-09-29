@@ -1,0 +1,63 @@
+/* chat: {
+    position: 'relative',
+    width: '250px',
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    borderRadius: '40px',
+    padding: '15px',
+    '&::before': {
+        content: '',
+        width: '0px',
+        height: '0px',
+        position: 'absolute',
+        left: '-24px',
+        bottom: '24px',
+        borderLeft: '10px solid #fff',
+        borderRight: '60px solid #fff',
+        borderTop: '30px solid #fff',
+        borderBottom: '10px solid #fff',
+        clipPath: 'polygon(39% 64%, 100% 14%, 100% 56%, 0 100%)',
+    },
+}, */
+
+.chat {
+    position: relative;
+    font-family: 'lato';
+    width: 300px;
+    background: wheat;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+}
+
+.chat::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid wheat;
+    border-right: 12px solid transparent;
+    border-top: 5px solid wheat;
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
+}
+
+@media screen and (max-width: 450px) {
+    .chat {
+        width: 150px;
+        height: 60px;
+    }
+    .chat::before {
+        border-left: 14px solid wheat;
+        border-right: 5px solid transparent;
+        border-top: 5px solid wheat;
+        border-bottom: 20px solid transparent;
+    }
+    .chat span {
+        font-size: 10px;
+        position: absolute;
+        right: 0.5rem;
+        top: 1rem;
+    }
+}

@@ -1,0 +1,22 @@
+.footer-root {
+    background-image: url(../images/darkwood.jpeg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    align-content: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 950px) {
+    .footer-root {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+@media screen and (max-width: 650px) {
+    .footer-root {
+        grid-template-columns: repeat(1, 100%);
+    }
+}

@@ -1,0 +1,39 @@
+.card {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+    position: relative;
+    transform: rotateY(20deg) skewY(-1.5deg);
+    transition: all 0.3s ease-out;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0.5rem;
+    top: 0;
+    left: 0;
+    background-color: #2e1201;
+    transform-origin: right;
+    transform: skewY(5deg);
+}
+.card::after {
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 100%;
+    top: 0;
+    background-color: #2e1201;
+    transform: skewX(15deg);
+    transform-origin: top;
+}
+
+.card:hover {
+    transform: translateY(-15px) skewY(0deg);
+}
+.card:hover img {
+    box-shadow: -9px -4px 13px 0px rgba(6, 5, 5, 0.75);
+    -webkit-box-shadow: -9px -4px 13px 0px rgba(6, 5, 5, 0.75);
+    -moz-box-shadow: -9px -4px 13px 0px rgba(6, 5, 5, 0.75);
+}

@@ -1,0 +1,100 @@
+/* Svg Animation */
+
+#Slice1 {
+    transition: transform 0.2s ease-out;
+    animation: moveInLeft 10s ease-out infinite;
+    animation-delay: 5s;
+}
+#Slice2 {
+    transition: transform 0.2s ease-out;
+    animation: moveRight 10s ease-out infinite;
+    animation-delay: 5s;
+}
+#Slice3 {
+    transition: transform 0.2s ease-out;
+    animation: moveInLeft 10s ease-out infinite;
+    animation-delay: 5s;
+}
+
+#Cheese {
+    transition: transform 0.2s ease-out;
+    animation: moveInTop 10s ease-out infinite;
+    animation-delay: 5s;
+}
+#Upper-Bun {
+    transition: transform 0.2s ease-out;
+    animation: moveBunBottom 10s ease-out infinite;
+    animation-delay: 5s;
+}
+
+#Lower-Bun {
+    transition: transform 0.2s ease-out;
+    animation: moveBunTop 10s ease-out infinite;
+    animation-delay: 5s;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moveBunTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moveBunBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) rotate(-90deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}
