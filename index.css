@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bonheur Royale', cursive;
+    position: relative;
+    background-image: url(./images/woodblur.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(3, 0, 0, 0.411);
+    border-radius: 6px;
+}
+
+/* Button */
+
+.button {
+    position: relative;
+    border: none;
+    display: inline-block;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+        inset 0px -5px 0px 0px rgba(0, 0, 0, 0.3),
+        inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 36px;
+}
+.button:active {
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+        inset 0px -2px 0px 0px rgba(0, 0, 0, 0.3),
+        inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    top: 3px;
+}
+.button div {
+    padding: 10px 20px 12px 20px;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
+}
+.button:active div {
+    padding-bottom: 9px;
+}
+.wood {
+    background: url(http://1.bp.blogspot.com/-tXavBQFjNFQ/VMSaYaq7PtI/AAAAAAAADSc/awMPRe3yu5A/s1600/wood_pattern.png);
+}
